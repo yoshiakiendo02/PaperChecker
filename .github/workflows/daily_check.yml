@@ -2,8 +2,9 @@ name: Daily Paper Check
 
 on:
   schedule:
-    # 毎日 日本時間 朝8:00 (UTC 23:00) に実行
-    - cron: '0 23 * * *'
+    # 毎日 日本時間 朝9:00 (UTC 00:00) に実行
+    # 注意：アクセス集中により起動が1時間半ほど遅れます（仕様です）
+    - cron: '0 0 * * *'
   workflow_dispatch: # 手動実行ボタンを有効化
 
 permissions:
