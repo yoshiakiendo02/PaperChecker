@@ -38,8 +38,8 @@ MODEL_NAME = "gemini-2.5-flash"       # Geminiモデル
 
 # アクセス集中回避設定
 STARTUP_RANDOM_DELAY_MINUTES = 1
-REQUEST_INTERVAL_MIN = 3
-REQUEST_INTERVAL_MAX = 10
+REQUEST_INTERVAL_MIN = 1
+REQUEST_INTERVAL_MAX = 3
 
 # --- スクレイピング対策ヘッダー (UserAgent設定) ---
 # マニュアルにある通り、GitHub Secrets "MyUserAgent" を優先使用
@@ -308,7 +308,7 @@ def main():
         try:
             try:
                 # UserAgentを設定してリクエスト
-                response = requests.get(rss_url, headers=HEADERS, timeout=15)
+                response = requests.get(rss_url, headers=HEADERS, timeout=5)
                 if response.status_code != 200:
                     print(f"Skipping {rss_url}: Status {response.status_code}")
                     continue
