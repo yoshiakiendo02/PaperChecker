@@ -123,13 +123,49 @@ def clean_text(text: str) -> str:
     return clean.strip()
 
 def clean_source_name(title: str) -> str:
-    """雑誌名の整形"""
-    remove_list = [
-        "ScienceDirect Publication: ", "Table of Contents", "Wiley:", "JGR:", "Advance Access"
+    """
+    雑誌名を正規化・クリーニングする関数
+    """
+    if not title:
+        return "Unknown Journal"
+
+    # 1. HTMLタグや余分な空白の除去（念のため）
+    cleaned = clean_text(title)
+
+    # 2. 明確なパブリッシャー・プレフィックスの削除
+    # "JGR:" などもここで削除したい場合はリストに追加
+    prefixes_to_remove = [
+        r"^AAAS:\s*",
+        r"^ScienceDirect Publication:\s*",
+        r"^Wiley:\s*",
+        r"^Table of Contents\s*",
+        r"^Advance Access\s*",
+        r"^JGR:\s*",  # JGR: Biogeosciences -> Biogeosciences としたい場合
     ]
-    cleaned = title
-    for prefix in remove_list:
-        cleaned = cleaned.replace(prefix, "")
+    for pattern in prefixes_to_remove:
+        cleaned = re.sub(pattern, "", cleaned, flags=re.IGNORECASE)
+
+    # 3. Nature Portfolio特有の「分野名 : 誌名」パターンの処理
+    # 例: "Earth ... : Nature Communications subject feeds" -> "Nature Communications subject feeds"
+    # Natureが含まれ、かつコロンがある場合、コロンより後ろ（右側）を採用する
+    if "Nature" in cleaned and ":" in cleaned:
+        parts = cleaned.split(":")
+        # 最後の部分を取得（通常ここに誌名がある）
+        cleaned = parts[-1].strip()
+
+    # 4. 接尾辞（Suffix）の削除
+    # 末尾につく不要な文字列パターン
+    suffixes_to_remove = [
+        r"\s-\s+latest papers.*",      # IOP系 (The Planetary Science Journal - latest papers)
+        r"\s+subject feeds.*",         # Nature系 (... subject feeds)
+        r"\s-\s+most recent.*",        # Wiley系 (... - Most Recent)
+        r"\s-\s+current issue.*",      # その他
+        r"\s+-\s+Table of Contents.*", # Science系
+    ]
+    for pattern in suffixes_to_remove:
+        cleaned = re.sub(pattern, "", cleaned, flags=re.IGNORECASE)
+
+    # 5. 仕上げ
     return cleaned.strip().rstrip(':').strip()
 
 def parse_elsevier_date(description: str) -> Tuple[Optional[datetime.date], str, bool]:
