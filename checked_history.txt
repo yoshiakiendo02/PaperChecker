@@ -1452,3 +1452,6 @@ https://iopscience.iop.org/article/10.3847/1538-4357/ae2adc
 https://iopscience.iop.org/article/10.3847/1538-4365/ae2259
 https://iopscience.iop.org/article/10.3847/1538-4365/ae25eb
 https://iopscience.iop.org/article/10.3847/1538-4365/ae2c53
+https://www.nature.com/articles/s41467-026-68369-5
+https://www.nature.com/articles/s43017-025-00755-x
+https://iopscience.iop.org/article/10.3847/2041-8213/ae2916
