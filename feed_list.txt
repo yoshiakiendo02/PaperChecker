@@ -50,8 +50,19 @@ https://pubs.acs.org/action/showFeed?type=axatoc&feed=rss&jc=ancham
 https://pubs.acs.org/action/showFeed?type=axatoc&feed=rss&jc=aesccq
 
 # --- EGU ---
+# EGU Highlight
+https://www.egu.eu/news/highlight-articles/rss/
+# ACP
+https://www.egu.eu/news/highlight-articles/acp/rss/
+# Atmospheric Sciences Division
+https://www.egu.eu/as/publications/highlight-articles/rss/
+# GMD（※Solid Earth も混ざる：EGU Geodynamics DivisionのHighlight）
+https://www.egu.eu/gd/publications/highlight-articles/rss/
+# BG（Biogeosciences DivisionのHighlight：複数誌が混ざる）
+https://www.egu.eu/bg/new/publications/highlight-articles/rss/
 
 # --- Angewandte Chemie International Edition ---
+https://onlinelibrary.wiley.com/feed/15213773/most-recent
 
 # --- Others ---
 https://onlinelibrary.wiley.com/feed/14724669/most-recent
