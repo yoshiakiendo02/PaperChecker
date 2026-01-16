@@ -41,6 +41,18 @@ https://iopscience.iop.org/journal/rss/0067-0049
 https://iopscience.iop.org/journal/rss/2632-3338
 https://iopscience.iop.org/journal/rss/3049-4753
 
+# --- ACS ---
+# JACS
+https://pubs.acs.org/action/showFeed?type=axatoc&feed=rss&jc=jacsat
+# Anal Chem
+https://pubs.acs.org/action/showFeed?type=axatoc&feed=rss&jc=ancham
+# ACS Earth
+https://pubs.acs.org/action/showFeed?type=axatoc&feed=rss&jc=aesccq
+
+# --- EGU ---
+
+# --- Angewandte Chemie International Edition ---
+
 # --- Others ---
 https://onlinelibrary.wiley.com/feed/14724669/most-recent
 https://www.liebertpub.com/action/showFeed?type=etoc&feed=rss&jc=ast
