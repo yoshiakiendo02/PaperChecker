@@ -1,7 +1,3 @@
-https://iopscience.iop.org/article/10.3847/1538-4357/ae5e6a
-https://iopscience.iop.org/article/10.3847/1538-4357/ae5f65
-https://iopscience.iop.org/article/10.3847/1538-4357/ae5f8d
-https://iopscience.iop.org/article/10.3847/1538-4357/ae60ff
 https://iopscience.iop.org/article/10.3847/1538-4357/ae6113
 https://iopscience.iop.org/article/10.3847/2041-8213/ae4ec5
 https://iopscience.iop.org/article/10.3847/2041-8213/ae5f73
@@ -4998,3 +4994,7 @@ https://agupubs.onlinelibrary.wiley.com/doi/10.1029/2026GL123321?af=R
 https://agupubs.onlinelibrary.wiley.com/doi/10.1029/2026GL122157?af=R
 https://agupubs.onlinelibrary.wiley.com/doi/10.1029/2026GL123787?af=R
 https://agupubs.onlinelibrary.wiley.com/doi/10.1029/2026GL122492?af=R
+https://www.nature.com/articles/s41598-026-60081-0
+https://www.nature.com/articles/s41598-026-58565-0
+https://www.nature.com/articles/s41598-026-59621-5
+https://www.nature.com/articles/s41598-026-59343-8
