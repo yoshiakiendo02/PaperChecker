@@ -1,11 +1,3 @@
-http://dx.doi.org/10.1021/jacs.5c20952
-http://dx.doi.org/10.1021/jacs.5c22182
-http://dx.doi.org/10.1021/jacs.5c22325
-http://dx.doi.org/10.1021/jacs.5c22440
-http://dx.doi.org/10.1021/jacs.5c23387
-http://dx.doi.org/10.1021/jacs.6c01396
-http://dx.doi.org/10.1021/jacs.6c01769
-http://dx.doi.org/10.1021/jacs.6c02267
 http://dx.doi.org/10.1021/jacs.6c02338
 http://dx.doi.org/10.1021/jacs.6c02848
 http://dx.doi.org/10.1021/jacs.6c03789
@@ -4998,3 +4990,11 @@ https://iopscience.iop.org/article/10.3847/PSJ/ae7a46
 https://iopscience.iop.org/article/10.3847/PSJ/ae7bf4
 https://iopscience.iop.org/article/10.3847/PSJ/ae7d2c
 https://bg.copernicus.org/articles/23/4447/2026/bg-23-4447-2026.html
+https://www.nature.com/articles/s41467-026-75199-y
+https://www.nature.com/articles/s41467-026-75320-1
+https://www.nature.com/articles/s43247-026-03797-1
+https://www.nature.com/articles/s41598-026-60571-1
+https://www.nature.com/articles/s41598-026-60708-2
+https://www.nature.com/articles/s41598-026-60373-5
+https://www.nature.com/articles/s41598-026-57362-z
+https://www.nature.com/articles/s41598-026-54658-y
